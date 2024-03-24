@@ -17,15 +17,15 @@
   },
   "name": "backend-crud",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "functions/index.js",
   "devDependencies": {
     "nodemon": "^3.1.0"
   },
   "type": "module",
   "scripts": {
+    "build": "netlify deploy --prod",
     "dev": "nodemon functions/index.js",
-    "start": "node functions/index.js",
-    "build": "netlify deploy --prod"
+    "start": "node functions/index.js"
   },
   "keywords": [],
   "author": "",
